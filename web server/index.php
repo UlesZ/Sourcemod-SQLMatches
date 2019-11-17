@@ -28,7 +28,7 @@ if (isset($_GET["page"])) {
         require ("head.php");
         ?>
         <form method="post">
-            <div class="search-container center" style="width:70%;"><input type="text" name="search-bar" placeholder="Search Match ID, Player Name or SteamID64" class="search-input"><button class="btn btn-light search-btn" type="submit" name="Submit"> <i class="fa fa-search"></i></button></div>
+            <div class="search-container center" style="width:70%;"><input type="text" name="search-bar" placeholder="Išči Match ID, igralčevo ime ali SteamID64" class="search-input"><button class="btn btn-light search-btn" type="submit" name="Submit"> <i class="fa fa-search"></i></button></div>
         </form>
 <?php
     if (isset($_POST['Submit']) && !empty($_POST['search-bar'])) {
@@ -74,7 +74,7 @@ if (isset($_GET["page"])) {
             </a>';
         }
     } else {
-        echo '<h1 style="margin-top:20px;text-align:center;">No Results!</h1>';
+        echo '<h1 style="margin-top:20px;text-align:center;">Ni rezultatov!</h1>';
     }
 ?>
 <?php
@@ -91,13 +91,13 @@ if (isset($_GET["page"])) {
                 if ($page_number == 1) {
                     echo '
                     <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
+                        <span class="page-link">Nazaj</span>
                     </li>';
                 } else {
                     $past_page = $page_number - 1;
                     echo '
                     <li class="page-item">
-                        <a class="page-link" href="?page='.$past_page.'">Previous</a>
+                        <a class="page-link" href="?page='.$past_page.'">Nazaj</a>
                     </li>';
                 }
                 for ($i = max(1, $page_number - 2); $i <= min($page_number + 4, $total_pages); $i++) {
@@ -106,7 +106,7 @@ if (isset($_GET["page"])) {
                         <li class="page-item active">
                             <span class="page-link">
                             '.$i.'
-                            <span class="sr-only">(current)</span>
+                            <span class="sr-only">(trenutno)</span>
                             </span>
                         </li>';
                     } else {
@@ -116,13 +116,13 @@ if (isset($_GET["page"])) {
                 if ($page_number == $total_pages) {
                     echo '
                     <li class="page-item disabled">
-                        <span class="page-link">Next</span>
+                        <span class="page-link">Naprej</span>
                     </li>';
                 } else {
                     $next_page = $page_number + 1;
                     echo '
                     <li class="page-item">
-                        <a class="page-link" href="?page='.$next_page.'">Next</a>
+                        <a class="page-link" href="?page='.$next_page.'">Naprej</a>
                     </li>';
                 }
                 echo '
@@ -130,7 +130,7 @@ if (isset($_GET["page"])) {
             </nav>';
         }
 ?>
-    </div><a class="text-white" href="https://github.com/DistrictNineHost/Sourcemod-SQLMatches" target="_blank" style="position:fixed;bottom:0px;right:10px;">Developed by DistrictNine.Host</a>
+    </div><a class="text-white" style="position:fixed;bottom:0px;right:10px;">StarFall Network</a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-animation.js?h=98fdbbd86223499341d76166d015c405"></script>

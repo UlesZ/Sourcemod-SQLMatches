@@ -1,13 +1,13 @@
 <?php
-$site_name = "DistrictNine.Host"; // Name of Site
-$page_title = "DistrictNine.Host | Matches"; // Page title in browser.
-$logo = "assets/img/White.png";
+$site_name = "CS:GO"; // Name of Site
+$page_title = "Pbyte | Tekmovanje"; // Page title in browser.
+$logo = "assets/img/StarFallNetwork_inverted.png";
 $limit = 3; // Page Limit for match cards.
 
-$servername = ""; // Server IP
-$username = ""; // DB Username
+$servername = "localhost"; // Server IP
+$username = "root"; // DB Username
 $password = ""; // DB Password
-$dbname = ""; // DB Name
+$dbname = "sqlmatches"; // DB Name
 
 $maps = array(
     // "Path/To/Image" => "full_map_name",
